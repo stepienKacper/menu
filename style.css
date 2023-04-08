@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+
+
+:root {
+    --black: #1b263b;
+    --gray: #415a77;
+    --white: #e0e1dd;
+    --dark-black: #0d1b2a;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--black);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Outfit', sans-serif;
+    font-size: 80px;
+    color: whitesmoke;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    /* margin: 0;
+    width: 500px; */
+    display: none;
+}
+
+li {
+    margin: 0;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    text-align: center;
+    display: inline;
+    margin-left: 20px;
+}
+
+span {
+    margin-left: 30px;
+}
+
+span:hover{
+    cursor: pointer;
+}
+
+ul {
+    margin: 20px;
+    text-decoration: none;
+    width: 100vw;
+    background: var(--gray);
+    display: inline;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: color .5s;
+}
+
+a:hover{
+    color: var(--white);
+    background: var(--dark-black);
+}
+
+ul#nav {
+    display: block;
+}
+
+
+
+
+@media only screen and (max-width: 900px){
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin: 0;
+    width: 500px;
+    display: block;
+}
+
+li {
+    margin: 0;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+    list-style-type: none;
+    text-align: center;
+}
+
+span {
+    margin-left: 30px;
+}
+
+span:hover{
+    cursor: pointer;
+}
+
+ul {
+    margin: 20px;
+    text-decoration: none;
+    width: 500px;
+    background: var(--gray);
+    display: block;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: color .5s;
+}
+
+a:hover{
+    color: var(--white);
+    background: var(--dark-black);
+}
+
+ul#nav {
+    display: block;
+}
+
+}
