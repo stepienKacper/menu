@@ -94,8 +94,9 @@ ul#nav {
 
 p {
     margin: 0;
-    width: 500px;
+    width: 100vw;
     display: block;
+    margin-left: 50%;
 }
 
 li {
@@ -119,7 +120,7 @@ span:hover{
 ul {
     margin: 20px;
     text-decoration: none;
-    width: 500px;
+    width: 100vw;
     background: var(--gray);
     display: block;
     flex-direction: column;
@@ -139,7 +140,72 @@ a:hover{
 }
 
 ul#nav {
-    display: block;
+    display: none;
 }
 
 }
+
+
+
+@media only screen and (max-width: 500px){
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+    
+    p {
+        justify-content: center;
+        margin-left: 50%;
+        width: 100vw;
+        display: block;
+    }
+    
+    li {
+        margin: 0;
+        text-decoration: none;
+        width: 100vw;
+        height: 5vh;
+        display: block;
+        list-style-type: none;
+        text-align: left;
+    }
+    
+    span {
+        margin-left: 30px;
+    }
+    
+    span:hover{
+        cursor: pointer;
+    }
+    
+    ul {
+        margin: 20px;
+        text-decoration: none;
+        width: 100vw;
+        background: var(--gray);
+        display: block;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: center;
+    }
+    
+    a {
+        text-decoration: none;
+        color: whitesmoke;
+        transition: color .5s;
+    }
+    
+    a:hover{
+        color: var(--white);
+        background: var(--dark-black);
+    }
+    
+    ul#nav {
+        display: none;
+    }
+    
+    }
